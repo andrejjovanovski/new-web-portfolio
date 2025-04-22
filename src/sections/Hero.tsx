@@ -6,6 +6,13 @@ import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import HeroOrbit from "@/components/HeroOrbit";
 
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
@@ -92,14 +99,14 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 h-12 px-6 rounded-xl">
+          <a className="inline-flex items-center gap-2 border border-white/15 h-12 px-6 rounded-xl z-10 hover:bg-gray-900" href={"#projects"}>
             <ArrowDown className="size-4" />
             <span className="font-semibold">Explore my work</span>
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 font-semibold h-12 px-6 rounded-xl">
+          </a>
+          <a className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 font-semibold h-12 px-6 rounded-xl z-10 hover:bg-gray-100" href={"#contact"}>
             <span>👋</span>
             <span>Let's connect</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

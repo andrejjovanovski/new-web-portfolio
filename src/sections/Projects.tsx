@@ -48,7 +48,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="pb-16 lg:py-24" id="projects">
       <div className="container">
         <SectionHeader eyebrow={"Real-World Results"} title={"Featured Projects"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet\n" +
           "consectetur elit. Vel, tenetur."} />

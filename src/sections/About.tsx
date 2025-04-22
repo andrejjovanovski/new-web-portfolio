@@ -114,7 +114,7 @@ const hobbies = [
 export const AboutSection = () => {
   const contraintRef = useRef(null);
   return (
-    <div className="py-20">
+    <div className="py-20" id="about">
       <div className="container">
         <SectionHeader title={"A Glimps Into My World"} eyebrow={"About Me"}
                        description={"Get to know my story, the passions that drive me, and the values that guide everything I do."}/>
