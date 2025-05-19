@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import cokolendMonitor from "@/assets/images/asdasd.png"
+import mhra from "@/assets/images/mhra.png";
+import library from "@/assets/images/libraryMonitor.png";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpIcon from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
@@ -9,40 +9,40 @@ import {SectionHeader} from "@/components/SectionHeader";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Cokolend",
+    year: "2024",
+    title: "Shop-to-Production System",
+    results: [
+      { title: "Cut delivery scheduling delays by 50%" },
+      { title: "Increased order accuracy by 35%" },
+      { title: "Streamlined order processing by 40%" },
+    ],
+    link: "https://github.com/andrejjovanovski/cokolend-app",
+    image: cokolendMonitor,
+  },
+  {
+    company: "MHRA",
+    year: "2024",
+    title: "Content Management System",
+    results: [
+      { title: "Dynamic website content" },
+      { title: "Simplified event scheduling by 30%" },
+      { title: "Easier content management" },
+    ],
+    link: "https://git.brainster.co/Andrej.Jovanovski-FS15/brainsterprojects_andrejjovanovskifs15/-/tree/project03",
+    image: mhra,
+  },
+  {
+    company: "Brasinter",
+    year: "2024",
+    title: "Brainster Library",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://github.com/andrejjovanovski/brainster-library",
+    image: library,
   },
 ];
 
@@ -50,8 +50,7 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24" id="projects">
       <div className="container">
-        <SectionHeader eyebrow={"Real-World Results"} title={"Featured Projects"} description={"Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet\n" +
-          "consectetur elit. Vel, tenetur."} />
+        <SectionHeader eyebrow={"Real-World Results"} title={"Featured Projects"} description={"A curated collection of web development projects demonstrating responsive design, clean code, and real-world functionality."} />
 
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
           {portfolioProjects.map((project, projectIndex) => (
